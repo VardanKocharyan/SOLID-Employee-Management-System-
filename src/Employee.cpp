@@ -13,7 +13,7 @@ Employee& Employee::setRole(Role r) noexcept { role = r; return *this; }
 void Employee::PrintInfo() const noexcept {
   std::cout << "Name. " << getName() 
     << "\nId. " << getId() 
-    << "Role. ";
+    << "\nRole. ";
     switch(getRole()) {
        case Role::Developer: std::cout << "Developer."; break;
        case Role::SalesPerson: std::cout << "SalesPerson."; break;
