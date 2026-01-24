@@ -5,7 +5,6 @@
 void EmployeeRepository::add(const std::shared_ptr<Employee>& e) { employees.push_back(e); }
 
 void EmployeeRepository::remove(size_t id) {
-  std::vector<std::shared_ptr<Employee>> tmp;
   for(size_t i{}; i < employees.size(); ++i) {
     if(employees[i]->getId() == id) {
       std::cout << "\tRemove.\n";
